@@ -22,7 +22,6 @@ function createWindow() {
 		icon: __dirname + '/icon/icon.png'
 	})
 
-	console.log(getFileUrl(path.join(__dirname, 'index.html')))
 	win.loadURL(getFileUrl(path.join(__dirname, 'index.html')))
 	win.webContents.openDevTools()
 
