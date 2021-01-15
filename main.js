@@ -1,11 +1,11 @@
 const path = require('path');
 const url = require('url');
-const {app, BrowseWindow} = require('electron');
+const {app, BrowserWindow} = require('electron');
 
 let win;
 
 function createWindow() {
-    win = new BrowseWindow({
+    win = new BrowserWindow({
         width: 700, 
         height: 500, 
         icon: __dirname + "/icon/icon.png"
