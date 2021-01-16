@@ -7,9 +7,13 @@
     "electron": "^11.2.0",
     "i": "^0.3.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "electron-reload": "^1.5.0"
+  },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron .",
+    "watch": "NODE_ENV=development WATCH_MODE=true electron ."
   },
   "author": "",
   "license": "ISC"
